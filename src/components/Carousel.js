@@ -57,6 +57,12 @@ const Container = styled.div`
             display: none;
         }
     }
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
 `
 
 const Carousel = () => {
