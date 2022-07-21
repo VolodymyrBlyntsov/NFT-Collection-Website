@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CoverVideo from '../CoverVideo';
 import TypeWriterText from '../TypeWriterText';
 
 const Section = styled.section`
@@ -13,7 +14,7 @@ const Container = styled.div`
   width: 75%;
   min-height: 80vh;
   margin: 0 auto;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 
   display: flex;
   justify-content: center;
@@ -33,8 +34,12 @@ const Home = () => {
   return (
     <Section>
       <Container>
-        <Box> <TypeWriterText /> </Box>
-        <Box>video</Box>
+        <Box>
+          <TypeWriterText /> 
+        </Box>
+        <Box>  
+          <CoverVideo />
+        </Box>
       </Container>
     </Section>
   )
