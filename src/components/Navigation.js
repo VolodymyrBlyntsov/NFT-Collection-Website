@@ -54,7 +54,7 @@ const Navigation = () => {
           <MenuItem>Team</MenuItem>
           <MenuItem>Faq</MenuItem>
         </Menu>
-        <Button text='Connect Wallet' link='https://google.com' />
+        <Button text='Connect Wallet' link='https://metamask.io/' />
       </NavBar>
     </Section>
   )
