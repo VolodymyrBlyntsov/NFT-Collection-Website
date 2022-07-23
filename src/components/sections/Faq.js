@@ -45,8 +45,8 @@ const Faq = () => {
     let element = ref.current;
     ScrollTrigger.create({
       trigger: element,
-      start: 'top top',
-      bottom: 'bottom center',
+      start: "top top",
+      end: "bottom top",
       pin: true,
       pinSpacing: false,
       scrub: true

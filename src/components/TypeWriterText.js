@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
-import Button from './sections/Button';
+import Button from '../components/Button';
 
 const Title = styled.h2`
     font-size: ${props => props.theme.fontxxl};

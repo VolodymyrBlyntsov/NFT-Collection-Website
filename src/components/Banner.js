@@ -1,5 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
+import img1 from '../assets/Nfts/banner_1.svg';
+import img2 from '../assets/Nfts/banner_2.svg';
+import img3 from '../assets/Nfts/banner_3.svg';
+import img4 from '../assets/Nfts/banner_4.svg';
+import img5 from '../assets/Nfts/banner_5.svg';
+import img6 from '../assets/Nfts/banner_6.svg';
 
 const Section = styled.section`
     width: 100vw;
@@ -14,10 +20,93 @@ const Section = styled.section`
     overflow: hidden;
 `
 
+const ImgContainer = styled.div`
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+  img {
+    width: 15rem;
+    height: auto;
+  }
+`
+
+const Title = styled.h1`
+  font-size: ${props => props.theme.fontxxxl};
+  color: ${props => props.theme.body};
+  padding: 1rem 2rem;
+  z-index:10;
+  width: 35%;
+  text-shadow: 1px 1px 1.4px ${props => props.theme.body};
+`
+
+const BtnContainer = styled.div`
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+`
+
+const JoinNow = styled.button`
+    display: inline-block;
+    background-color: ${props => props.theme.body};
+    color: ${props => props.theme.text};
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: ${props => props.theme.fontlg};
+    padding: 1.5rem 3rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+
+    &:hover {
+        transform: scale(0.9);
+    }
+    
+    &::after {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        border: 2px solid ${props => props.theme.body};
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        transition: all 0.2s ease;
+    }
+
+    &:hover::after {
+        transform: translate(-50%, -50%) scale(1);
+        padding: 0.3rem;
+    }
+`
+
 const Banner = () => {
   return (
-    <Section>Banner</Section>
+    <Section>
+      <ImgContainer>
+        <img src={img1} alt="The Tadpoles" />
+        <img src={img2} alt="The Tadpoles" />
+        <img src={img3} alt="The Tadpoles" />
+        <img src={img4} alt="The Tadpoles" />
+        <img src={img5} alt="The Tadpoles" />
+        <img src={img6} alt="The Tadpoles" />
+      </ImgContainer>
+      <Title>Join the <br/> Tadpoles Club</Title>
+      <BtnContainer>
+        <JoinNow>
+          Join Now
+        </JoinNow>
+      </BtnContainer>
+    </Section>
   )
 }
 
-export default Banner
+export default Banner 

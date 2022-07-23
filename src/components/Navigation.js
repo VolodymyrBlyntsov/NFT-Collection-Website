@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Logo from './Logo';
-import Button from './sections/Button';
+import Button from '../components/Button';
 
 const Section = styled.section`
   width: 100vw;
