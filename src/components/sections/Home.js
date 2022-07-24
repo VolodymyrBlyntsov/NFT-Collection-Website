@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import CoverVideo from '../CoverVideo';
-import TypeWriterText from '../TypeWriterText';
+import CoverVideo from '../utils/CoverVideo';
+import TypeWriterText from '../utils/TypeWriterText';
 import RoundTextBlack from '../../assets/Rounded-Text-Black.png';
 
 const Section = styled.section`
@@ -70,14 +70,14 @@ const Circle = styled.span`
 
 const Home = () => {
   return (
-    <Section>
+  <Section id="home">
       <Container>
         <Box>
           <TypeWriterText /> 
         </Box>
-        { /*<Box>  
+        <Box>  
           <CoverVideo />
-  </Box> */}
+        </Box>
         <Round>
           <Circle>
             &#x2193;

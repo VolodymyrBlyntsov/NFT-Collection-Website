@@ -10,7 +10,7 @@ import img6 from '../../../assets/Nfts/team_6.svg';
 import img7 from '../../../assets/Nfts/team_7.svg';
 import img8 from '../../../assets/Nfts/team_8.svg';
 import img9 from '../../../assets/Nfts/team_9.svg';
-import ConfettiComponent from '../../ConfettiComponent';
+import ConfettiComponent from '../../utils/ConfettiComponent';
 
 const Section = styled.section`
   min-height: 100vh;
@@ -42,7 +42,7 @@ const Container = styled.div`
 
 const Team = () => {
   return (
-    <Section>
+    <Section id="team">
       <ConfettiComponent />
       <Title>Team</Title>
       <Container>

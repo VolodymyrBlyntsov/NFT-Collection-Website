@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import React, { useLayoutEffect, useRef } from 'react';
 import styled from 'styled-components';
-import Accordion from '../Accordion';
+import Accordion from '../utils/Accordion';
 
 const Section = styled.section`
   min-height: 100vh;
@@ -59,7 +59,7 @@ const Faq = () => {
 
 
   return (
-    <Section ref={ref}>
+    <Section ref={ref} id="faq">
       <Title>faq</Title>
       <Container>
         <Box>

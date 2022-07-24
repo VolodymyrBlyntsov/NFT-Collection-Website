@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Banner from './Banner';
-import Logo from './Logo';
+import Banner from './utils/Banner';
+import Logo from './utils/Logo';
 import Facebook from '../Icons/Facebook';
 import Instagram from '../Icons/Instagram';
 import Twitter from '../Icons/Twitter';
@@ -87,6 +87,15 @@ const Bottom = styled.div`
   }
 `
 
+const scrollTo = (id) => {
+  let element = document.getElementById(id)
+  element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    inline: 'nearest'
+  })
+}
+
 const Footer = () => {
   return (
     <Section>
@@ -103,12 +112,12 @@ const Footer = () => {
           </IconList>
         </Left>
         <MenuItems>
-          <Item>Home</Item>
-          <Item>About</Item>
-          <Item>Roadmap</Item>
-          <Item>Showcase</Item>
-          <Item>Team</Item>
-          <Item>Faq</Item>
+          <Item onClick={() => scrollTo('home')}>Home</Item>
+          <Item onClick={() => scrollTo('about')}>About</Item>
+          <Item onClick={() => scrollTo('roadmap')}>Roadmap</Item>
+          <Item onClick={() => scrollTo('showcase')}>Showcase</Item>
+          <Item onClick={() => scrollTo('team')}>Team</Item>
+          <Item onClick={() => scrollTo('faq')}>Faq</Item>
         </MenuItems>
       </Container>
       <Bottom>
@@ -116,7 +125,7 @@ const Footer = () => {
           &#169; {new Date().getFullYear()} Tadpoles Club. All right reserved.
         </span>
         <span>
-          Made with &#10084; by <a href="https://github.com/VolodymyrBlynt>">Volodymyr Blyntsov</a>
+          Made with &#10084; by <a href="https://github.com/VolodymyrBlyntsov" target="_blank">Volodymyr Blyntsov</a>
         </span>
       </Bottom>
     </Section>

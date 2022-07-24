@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import React, { useLayoutEffect, useRef } from 'react';
 import styled from 'styled-components';
-import DrawSvg from '../../DrawSvg';
+import DrawSvg from '../../utils/DrawSvg';
 import RoadMapItem from './RoadMapItem';
 
 const Section = styled.section`
@@ -112,7 +112,7 @@ const Roadmap = () => {
   }, [])
 
   return (
-    <Section>
+    <Section id="roadmap">
       <Title>Roadmap</Title>
       <Container>
         <SvgContainer>

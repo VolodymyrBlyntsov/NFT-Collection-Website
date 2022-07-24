@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import {dark} from '../../styles/Theme';
-import Carousel from '../Carousel';
-import Button from '../Button';
+import Carousel from '../utils/Carousel';
+import Button from '../utils/Button';
 
 const Section = styled.section`
   min-height: 100vh;
@@ -66,7 +66,7 @@ const SubTextLight = styled.p`
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <Box>
           <Carousel />
