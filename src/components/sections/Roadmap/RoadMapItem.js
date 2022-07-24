@@ -5,6 +5,10 @@ const Item = styled.li`
   width: 100%;
   height: 100%;
   display: flex;
+
+  @media (max-width: 48em) {
+    justify-content: flex-end !important;
+  }
 `
 
 const ItemContainer = styled.div`
@@ -12,6 +16,10 @@ const ItemContainer = styled.div`
   height: fit-content;
   padding: 1rem;
   border: 3px solid ${props => props.theme.text};
+
+  @media (max-width: 48em) {
+    width: 70%;
+  }
 `
 
 const Box = styled.p`
@@ -21,7 +29,6 @@ const Box = styled.p`
   padding: 1rem;
   position: relative;
   border: 1px solid ${props => props.theme.text};
-
 `
 
 const SubTitle = styled.span`
@@ -29,6 +36,11 @@ const SubTitle = styled.span`
   font-size: ${props => props.theme.fontxl};
   text-transform: capitalize;
   color: ${props => props.theme.text};
+
+  @media (max-width: 40em) {
+    font-size: ${props => props.theme.fontlg};
+    font-weight: 600;
+  }
 `
 const Text = styled.span`
   display: block;
@@ -36,6 +48,10 @@ const Text = styled.span`
   color: ${props => props.theme.text};
   font-weight: 400;
   margin: 0.5rem 0;
+
+  @media (max-width: 40em) {
+    font-size: ${props => props.theme.fontxs};
+  }
 `
 
 const RoadMapItem = ({title, subtext, addToRefs}) => {
