@@ -44,7 +44,7 @@ const Menu = styled.ul`
     height: ${props => `calc(100vh - ${props.theme.navHeight})`};
     z-index: 50;
     background-color: ${props => `rgba(${props.theme.bodyRgba}, 0.85)`};
-    transform: ${props => props.click ? 'translateY(0)' : 'translateY(100%)'};
+    transform: ${props => props.click ? 'translateY(0)' : 'translateY(1000%)'};
     backdrop-filter: blur(2px);
     transition: all 0.3s ease;
     flex-direction: column;
