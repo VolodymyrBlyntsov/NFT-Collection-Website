@@ -73,6 +73,8 @@ const ButtonContainer = styled.div`
     }
 `
 
+
+
 const TypeWriterText = () => {
   return (
     <>
@@ -99,7 +101,7 @@ const TypeWriterText = () => {
         </Title>
         <Subtitle>Bored Of Apes? Try Something New.</Subtitle>
         <ButtonContainer>
-            <Button text="Explore" link="#about" />
+            <Button text="Explore" />
         </ButtonContainer>
     </>
   )

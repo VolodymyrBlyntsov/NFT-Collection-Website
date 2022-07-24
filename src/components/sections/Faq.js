@@ -94,7 +94,7 @@ const Faq = () => {
             A metaverse is a network of 3D virtual worlds focused on social connection. In futurism and science fiction, it is often described as a hypothetical iteration of the Internet as a single, universal virtual world that is facilitated by the use of virtual and augmented reality headsets.
           </Accordion>
           <Accordion title='why do we need royalties?'>
-            The amount of royalties was fixed at 5% to finance the Tadlopes Club's projects. We have the ambition to organize multiple events around the world in order to strengthen the community and build a network of entrepreneurs and investors with the same mindset and common interests.
+            The amount of royalties was fixed at 5% to finance the Tadpoles Club's projects. We have the ambition to organize multiple events around the world in order to strengthen the community and build a network of entrepreneurs and investors with the same mindset and common interests.
           </Accordion>
         </Box>
         <Box>

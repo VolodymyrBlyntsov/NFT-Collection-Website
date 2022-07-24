@@ -152,7 +152,7 @@ const Navigation = () => {
           <MenuItem onClick={() => scrollTo('faq')}>Faq</MenuItem>
           <MenuItem>
             <div className="mobile">
-              <Button text='Connect Wallet' link='https://metamask.io/' />
+              <Button text='Connect Wallet' target="_blank" link='https://metamask.io/' />
             </div>
           </MenuItem>
         </Menu>
