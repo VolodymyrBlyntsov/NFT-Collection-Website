@@ -104,9 +104,9 @@ const Home = () => {
         <Box>
           <TypeWriterText /> 
         </Box>
-        { /*<Box>  
+        <Box>  
           <CoverVideo />
-  </Box> */}
+        </Box> 
         <Round>
           <Circle>
             &#x2193;
