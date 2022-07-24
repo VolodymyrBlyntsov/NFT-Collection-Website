@@ -50,6 +50,7 @@ const Menu = styled.ul`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    touch-action: none;
   }
 `
 
